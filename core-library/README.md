@@ -1,8 +1,8 @@
 # Core library
 
-This code is written for node and is not hindered by context or environment.
+Written as a node module.
 
-There is no necessary build process to run this library in node.
+Code does not need to be compiled to run in node!
 
 ### ES6
 
@@ -15,21 +15,19 @@ You can now run, debug and develop your code natively in ES6.
 
 ### Browserify
 
-If a non-node consumer whishes to use this code, they are encouraged to do so via
-[Browserify](browserify.org) in their build process. They will likely find that
-introducing browserify into their existing workflow will give them the immediate
-benefits of being able to cleanly consume almost any node package without any
-extra hoop jumping.
+If a non-node consumer (browsers) whishes to use this code, they are encouraged to do so via
+[Browserify](browserify.org) in their build process, allowing you to consume almost any node package without minimal effort.
 
-Since browsers don't support ES6, this code must be transpiled during browserification,
-using the babelify addon for browserify. Luckily, this can be hidden from consumers:
+Since browsers don't support ES6, this code must be transpiled during browserification using [babelify](https://github.com/babel/babelify).
 
-1. The browserify plugins (babelify + babel-presets) are added as production dependencies to [package.json](package.json#L24-L25)
-2. A `browserify` configuration block is added to [package.json](package.json#L11-L22)
-3. Consume this package with browserify as you would normally
+This can be setup automatically:
 
-Browserify will automatically detect configurations of each package and leverage
-the plugins that were installed as dependencies in this package.
+1. The browserify plugins (babelify + babel-presets) are added to production dependencies ([package.json](package.json#L24-L25))
+2. A `browserify` configuration is added ([package.json](package.json#L14-L18))
+3. Browserify as you would normally!
+
+Browserify will automatically detect the configuration and use
+the plugins listed as dependencies in this package.
 
 ### Developing
 
