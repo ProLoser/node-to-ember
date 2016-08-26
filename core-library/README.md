@@ -17,7 +17,9 @@ You can now run, debug and develop your code natively in ES6.
 
 #### ES6 in Node.js Alternative
 
-If you do not want to worry about inconsistent ES6 feature support for Node.js consumers, I recommend compiling the ES6 to an ES5 `build` tree that is identical to the `src` tree. This means **DONT USE BROWSERIFY**! By keeping a roughly identical file structure to your source code, running, debugging and developing in Node should still be fairly painless.
+If you do not want to worry about inconsistent ES6 feature support for Node.js consumers, I recommend compiling the ES6 to an ES5 `build` tree that is identical to the `src` tree. By keeping a roughly identical file structure to your source code, running, debugging and developing in Node should still be fairly painless.
+
+> Note: Don't use browserify to compile the `build` tree. The `build` tree is _only_ for Node.js consumers!
 
 I recommend having Node consumers use your `build` tree and Browserify consumers use your `src` tree. This can be easily configured in your `package.json` like this:
 
