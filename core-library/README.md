@@ -23,10 +23,8 @@ I recommend having Node consumers use your `build` tree and Browserify consumers
 
 ```json
 {
-  ...
   "main": "build/index.js", // Consumed by node
   "browser": "src/index.js", // Consumed by browserify
-  ...
 }
 ```
 
