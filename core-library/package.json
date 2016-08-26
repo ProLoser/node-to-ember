@@ -8,7 +8,8 @@
     "node": ">= 4.4.2"
   },
   "scripts": {
-    "build": "babel -d build src "
+    "build": "babel -d build src",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
