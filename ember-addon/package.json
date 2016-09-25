@@ -36,7 +36,9 @@
   "keywords": [
     "ember-addon"
   ],
-  "dependencies": {
+  "peerDependencies": {
+    "ember-browserify": "^1.1.8",
+    "core-library": "../core-library"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
