@@ -40,7 +40,7 @@ Since browsers don't support ES6, this source code should be transpiled during b
 This can be setup automatically:
 
 1. The browserify plugins (babelify + babel-presets) are added to production dependencies ([package.json](package.json#L24-L25))
-2. A `browserify` configuration is added ([package.json](package.json#L14-L18))
+2. A `browserify` configuration is added ([package.json](package.json#L16-L20))
 3. Browserify as you would normally!
 
 Browserify will automatically detect the configuration and use
