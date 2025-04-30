@@ -1,4 +1,7 @@
 # unbuilding-for-ember
+
+https://www.youtube.com/watch?v=kmRsjnTZXpE
+
 A demo repo showing how to make node and ember play nicely together
 
 * [core-library:](core-library/README.md) The core logic lacking any ember-specific code.
